@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Ribbon theme for Shower</title>
+  <title>CSS Grid Layout Module Level 1</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,17 +51,56 @@
   </section>
 
   <section class="slide">
-    <h2>List Navigation</h2>
+    <h2>Единицы измерения</h2>
     <ol>
-      <li>Ennui keffiyeh thundercats</li>
-      <li class="next">Jean shorts biodiesel</li>
-      <li class="next">Terry richardson, swag blog</li>
-      <li class="next">Locavore umami vegan helvetica</li>
-      <li class="next">Fingerstache kale chips</li>
+      <li>линейные размеры</li>
+      <li class="next">проценты</li>
+      <li class="next">доли (fraction) </li>
+      <li class="next">max-content</li>
+      <li class="next">min-content</li>
+      <li class="next">minmax(min, max)</li>
+      <li class="next">auto (minmax(min-content, max-content)).
+      </li>
     </ol>
-    <p class="next">Before they sold out master</p>
   </section>
-
+  <section class="slide">
+    <h2>Alignment and Spacing</h2>
+    <img src="images/engaged-elements.png" alt="" class="cover" >
+  </section>
+  <section class="slide">
+    <h2>Grid Area</h2>
+    <pre><code> #grid {
+      display: <mark>grid;</mark>
+      <mark>grid-template-areas:</mark> "title stats"
+                           "score stats"
+                           "board board"
+                           "ctrls ctrls"
+      <mark>grid-template-rows:</mark> auto minmax(min-content, 1fr) auto;
+      <mark>grid-template-columns:</mark> auto minmax(min-content, 1fr);
+    }
+</code></pre>
+  </section>
+  <section class="slide">
+    <h2>Named Grid Lines</h2>
+    <img src="images/grid-named-lines.png" alt=""  >
+  </section>
+  <section class="slide">
+    <img src="images/can-i-use.png"  alt=""  class="cover" >
+  </section>
+  <section class="slide">
+    <h2>Do you want reading more?</h2>
+    <ul>
+      <li>
+        <a href="https://www.w3.org/TR/css-grid-1/">CSS Grid Layout Module Level 1</a>
+      </li>
+      <li>
+        <a href="http://caniuse.com/#feat=css-grid">Can I use</a>
+      </li>
+    </ul>
+    <p class="note">Presentation:
+      <a href="https://htmlpreview.github.io/?https://github.com/ertage/Grid-Module-1-Presentation/blob/master/index.html"></a>
+    </p>
+  </section>
   <div class="progress"></div>
 
   <script src="node_modules/shower-core/shower.min.js"></script>
